@@ -1,5 +1,6 @@
 # 港股IPO HOT — 允许搜索引擎与 AI 爬虫抓取公开内容
 # 规范域名为 https://Staroltest.github.io/hk-ipo-hot/
+# 镜像 https://hk-ipo-hot.pages.dev 内容相同，请以规范域名为准
 # 给 AI 看的站点说明见 llms.txt（站根 /llms.txt）
 
 User-agent: *
