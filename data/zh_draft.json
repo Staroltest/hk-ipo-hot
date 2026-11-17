@@ -1,15 +1,15 @@
 {
+ "https://finkit.hk/en/ipo/06157": {
+  "en_oneliner": "Tourism company Slender West Lake has published an offer range of HK$3.92-5.07, with the listing date still to be set.",
+  "en_title": "Jiangsu Slender West Lake Culture and Tourism Co., Ltd. (06157)",
+  "zh_oneliner": "文旅企业瘦西湖文旅已公布招股价区间 3.92 至 5.07 港元，上市时间待定。",
+  "zh_title": "瘦西湖文旅 (06157)"
+ },
  "https://finkit.hk/en/ipo/00054": {
   "en_oneliner": "Biotech firm Hemay has published an offer range of HK$15.50-18.90, but its listing date has been delayed and the outcome is still pending.",
   "en_title": "Ganzhou Hemay Pharmaceutical Co., Ltd. (00054)",
   "zh_oneliner": "创新药企和美药业已公布招股价区间 15.50 至 18.90 港元，但上市日期推迟，仍在等招股结果。",
   "zh_title": "和美藥業－Ｂ (00054)"
- },
- "https://finkit.hk/en/ipo/07672": {
-  "en_oneliner": "Semiconductor packaging and testing firm Xinde listed on 10 November at an offer range of HK$8.60-9.60.",
-  "en_title": "Jiangsu Xinde Semiconductor Technology Co., Ltd. (07672)",
-  "zh_oneliner": "半导体封测企业芯德半导体 11 月 10 日上市，招股价 8.60 至 9.60 港元。",
-  "zh_title": "芯德半導體 (07672)"
  },
  "https://finkit.hk/en/ipo/02523": {
   "en_oneliner": "Logistics firm Yongkang Holdings has published an offer price of HK$2.44, with the listing date still to be set.",
@@ -17,23 +17,17 @@
   "zh_oneliner": "物流企业永康控股已公布招股价 2.44 港元，上市时间待定。",
   "zh_title": "永康控股 (02523)"
  },
- "https://finkit.hk/en/ipo/06935": {
-  "en_oneliner": "Commercial space company Adaspace listed on 13 November at an offer range of HK$24.90-33.20, working on satellites and space applications.",
-  "en_title": "Adaspace Technology Co., Ltd. (06935)",
-  "zh_oneliner": "商业航天公司国星宇航 11 月 13 日上市，招股价 24.90 至 33.20 港元，做卫星与航天应用。",
-  "zh_title": "國星宇航 (06935)"
+ "https://finkit.hk/en/ipo/02681": {
+  "en_oneliner": "Semiconductor firm HOSIN listed on 12 November at an offer range of HK$72.29-82.90.",
+  "en_title": "HOSIN Electronics Co., Ltd. (02681)",
+  "zh_oneliner": "半导体企业宏芯宇 11 月 12 日上市，招股价 72.29 至 82.90 港元。",
+  "zh_title": "宏芯宇 (02681)"
  },
- "https://finkit.hk/en/ipo/06157": {
-  "en_oneliner": "Tourism company Slender West Lake has published an offer range of HK$3.92-5.07, with the listing date still to be set.",
-  "en_title": "Jiangsu Slender West Lake Culture and Tourism Co., Ltd. (06157)",
-  "zh_oneliner": "文旅企业瘦西湖文旅已公布招股价区间 3.92 至 5.07 港元，上市时间待定。",
-  "zh_title": "瘦西湖文旅 (06157)"
- },
- "https://finkit.hk/en/ipo/03275": {
-  "en_oneliner": "Robotics company Microintelligence has published an offer range of HK$16.63-21.46, with the listing date still to be set.",
-  "en_title": "Changzhou Microintelligence Co., Ltd. (03275)",
-  "zh_oneliner": "机器人企业微亿智造已公布招股价区间 16.63 至 21.46 港元，上市时间待定。",
-  "zh_title": "微億智造 (03275)"
+ "https://finkit.hk/en/ipo/07672": {
+  "en_oneliner": "Semiconductor packaging and testing firm Xinde listed on 10 November at an offer range of HK$8.60-9.60.",
+  "en_title": "Jiangsu Xinde Semiconductor Technology Co., Ltd. (07672)",
+  "zh_oneliner": "半导体封测企业芯德半导体 11 月 10 日上市，招股价 8.60 至 9.60 港元。",
+  "zh_title": "芯德半導體 (07672)"
  },
  "https://finkit.hk/en/ipo/02206": {
   "en_oneliner": "Traditional Chinese medicine company Neautus listed on 11 November at an offer range of HK$40.20-50.55.",
@@ -41,23 +35,11 @@
   "zh_oneliner": "中药饮片企业新荷花 11 月 11 日上市，招股价 40.20 至 50.55 港元。",
   "zh_title": "新荷花 (02206)"
  },
- "https://finkit.hk/en/ipo/02384": {
-  "en_oneliner": "Precision manufacturer Dongshan Precision listed on 28 October with an offer price of up to HK$93.80, making printed circuit boards and precision components.",
-  "en_title": "Suzhou Dongshan Precision Manufacturing Co., Ltd. (02384)",
-  "zh_oneliner": "精密制造企业东山精密 10 月 28 日上市，招股价上限 93.80 港元，做印刷电路板与精密零部件。",
-  "zh_title": "東山精密 (02384)"
- },
- "https://finkit.hk/en/ipo/02681": {
-  "en_oneliner": "Semiconductor firm HOSIN listed on 12 November at an offer range of HK$72.29-82.90.",
-  "en_title": "HOSIN Electronics Co., Ltd. (02681)",
-  "zh_oneliner": "半导体企业宏芯宇 11 月 12 日上市，招股价 72.29 至 82.90 港元。",
-  "zh_title": "宏芯宇 (02681)"
- },
- "https://finkit.hk/en/ipo/09621": {
-  "en_oneliner": "Energy storage company RelyEZ listed on 9 November at an offer range of HK$8.54-11.10.",
-  "en_title": "RelyEZ Energy Storage Technology Co., Ltd. (09621)",
-  "zh_oneliner": "储能企业远信储能 11 月 9 日上市，招股价 8.54 至 11.10 港元。",
-  "zh_title": "遠信儲能 (09621)"
+ "https://finkit.hk/en/ipo/06935": {
+  "en_oneliner": "Commercial space company Adaspace listed on 13 November at an offer range of HK$24.90-33.20, working on satellites and space applications.",
+  "en_title": "Adaspace Technology Co., Ltd. (06935)",
+  "zh_oneliner": "商业航天公司国星宇航 11 月 13 日上市，招股价 24.90 至 33.20 港元，做卫星与航天应用。",
+  "zh_title": "國星宇航 (06935)"
  },
  "https://finkit.hk/en/ipo/09941": {
   "en_oneliner": "Biotech firm Sinotau is now taking subscriptions at HK$52.00-68.00, closing 19 November and listing 24 November, with grey-market trading on 23 November; it focuses on radiopharmaceutical diagnostics and therapies.",
@@ -70,6 +52,24 @@
   "en_title": "Amicro Technology Co., Ltd. (02065)",
   "zh_oneliner": "机器人芯片企业一微科技 11 月 12 日上市，招股价 9.27 至 11.58 港元。",
   "zh_title": "一微科技 (02065)"
+ },
+ "https://finkit.hk/en/ipo/03275": {
+  "en_oneliner": "Robotics company Microintelligence has published an offer range of HK$16.63-21.46, with the listing date still to be set.",
+  "en_title": "Changzhou Microintelligence Co., Ltd. (03275)",
+  "zh_oneliner": "机器人企业微亿智造已公布招股价区间 16.63 至 21.46 港元，上市时间待定。",
+  "zh_title": "微億智造 (03275)"
+ },
+ "https://finkit.hk/en/ipo/02384": {
+  "en_oneliner": "Precision manufacturer Dongshan Precision listed on 28 October with an offer price of up to HK$93.80, making printed circuit boards and precision components.",
+  "en_title": "Suzhou Dongshan Precision Manufacturing Co., Ltd. (02384)",
+  "zh_oneliner": "精密制造企业东山精密 10 月 28 日上市，招股价上限 93.80 港元，做印刷电路板与精密零部件。",
+  "zh_title": "東山精密 (02384)"
+ },
+ "https://finkit.hk/en/ipo/09621": {
+  "en_oneliner": "Energy storage company RelyEZ listed on 9 November at an offer range of HK$8.54-11.10.",
+  "en_title": "RelyEZ Energy Storage Technology Co., Ltd. (09621)",
+  "zh_oneliner": "储能企业远信储能 11 月 9 日上市，招股价 8.54 至 11.10 港元。",
+  "zh_title": "遠信儲能 (09621)"
  },
  "https://finkit.hk/en/ipo/09917": {
   "en_oneliner": "Semiconductor firm Denglin listed on 10 November at an offer range of HK$231.00-288.00, the highest pricing among this batch of listings.",
