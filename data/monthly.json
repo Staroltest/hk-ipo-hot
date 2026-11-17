@@ -5,7 +5,7 @@
  "date": "2026年11月18日",
  "date_iso": "2026-11-18",
  "issue": 1,
- "generated_at": "2026-11-17T22:21:44.112072+00:00",
+ "generated_at": "2026-11-17T23:36:15.916374+00:00",
  "summary": "过去 30 天共收录 13 条动态，精选 10 条（招股中 1 条、递表聆讯 4 条、首日表现 5 条）。头条：先通醫藥－Ｂ (09941)。",
  "items": [
   {
@@ -29,9 +29,9 @@
    "reason": "涉及认购与保荐人 · 6 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 359.6,
+   "hot_score": 355.4,
    "prev_rank": 1,
-   "prev_hot_score": 361.2
+   "prev_hot_score": 356.2
   },
   {
    "id": "36bc7ed1d24696bd219081ae07c463ecc28240e4",
@@ -52,9 +52,9 @@
    "reason": "涉及招股价 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 65.1,
+   "hot_score": 64.3,
    "prev_rank": 2,
-   "prev_hot_score": 65.4
+   "prev_hot_score": 64.5
   },
   {
    "id": "bad33a893b94c69f933fd089b7691cb1d0bb5947",
@@ -75,9 +75,9 @@
    "reason": "涉及招股价 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 65.1,
+   "hot_score": 64.3,
    "prev_rank": 3,
-   "prev_hot_score": 65.4
+   "prev_hot_score": 64.5
   },
   {
    "id": "0f2acae0fd461ccfe3dd7e8ad8b49259d5ee11e8",
@@ -98,9 +98,9 @@
    "reason": "涉及招股价 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 65.1,
+   "hot_score": 64.3,
    "prev_rank": 4,
-   "prev_hot_score": 65.4
+   "prev_hot_score": 64.5
   },
   {
    "id": "711ddeac12bc4000fdc9ab1b5c5e24f5e4ebabe1",
@@ -121,9 +121,9 @@
    "reason": "涉及招股价 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 65.1,
+   "hot_score": 64.3,
    "prev_rank": 5,
-   "prev_hot_score": 65.4
+   "prev_hot_score": 64.5
   },
   {
    "id": "d93affadd1577efbed12c990e9f64a63181dd15e",
@@ -133,7 +133,7 @@
    "source_id": "finkit-ipo",
    "published": "2026-11-12T16:00:00+00:00",
    "zh_title": "國星宇航 (06935)",
-   "zh_oneliner": "商业航天公司国星宇航 11 月 13 日上市，招股价 24.90 至 33.20 港元，做卫星与航天应用。",
+   "zh_oneliner": "商业航天公司国星宇航 11 月 13 日上市，招股价 24.90 至 33.20 港元，做卫星与航天应用。首日收跌 3.53%，暗盘涨 8.43%。",
    "category": "debut",
    "category_label": "首日表现",
    "tier": "T2",
@@ -146,9 +146,9 @@
    "reason": "涉及上市与招股价 · 与本主题相关",
    "is_new": false,
    "trend": "same",
-   "hot_score": 20.1,
+   "hot_score": 19.8,
    "prev_rank": 6,
-   "prev_hot_score": 20.2
+   "prev_hot_score": 19.9
   },
   {
    "id": "78d245ee5b77b193c19df30df4260b8d7cd61a6c",
@@ -158,7 +158,7 @@
    "source_id": "finkit-ipo",
    "published": "2026-11-11T16:00:00+00:00",
    "zh_title": "一微科技 (02065)",
-   "zh_oneliner": "机器人芯片企业一微科技 11 月 12 日上市，招股价 9.27 至 11.58 港元。",
+   "zh_oneliner": "机器人芯片企业一微科技 11 月 12 日上市，招股价 9.27 至 11.58 港元。首日收涨 38.18%，暗盘涨 32.32%。",
    "category": "debut",
    "category_label": "首日表现",
    "tier": "T2",
@@ -171,9 +171,9 @@
    "reason": "涉及上市与招股价 · 与本主题相关",
    "is_new": false,
    "trend": "same",
-   "hot_score": 16.1,
+   "hot_score": 15.9,
    "prev_rank": 7,
-   "prev_hot_score": 16.1
+   "prev_hot_score": 15.9
   },
   {
    "id": "f1eafdae288a84490c10e688df3893601fbdf03f",
@@ -183,7 +183,7 @@
    "source_id": "finkit-ipo",
    "published": "2026-11-11T16:00:00+00:00",
    "zh_title": "宏芯宇 (02681)",
-   "zh_oneliner": "半导体企业宏芯宇 11 月 12 日上市，招股价 72.29 至 82.90 港元。",
+   "zh_oneliner": "半导体企业宏芯宇 11 月 12 日上市，招股价 72.29 至 82.90 港元。首日收跌 0.04%，暗盘跌 0.8%。",
    "category": "debut",
    "category_label": "首日表现",
    "tier": "T2",
@@ -196,9 +196,9 @@
    "reason": "涉及上市与招股价 · 与本主题相关",
    "is_new": false,
    "trend": "same",
-   "hot_score": 16.1,
+   "hot_score": 15.9,
    "prev_rank": 8,
-   "prev_hot_score": 16.1
+   "prev_hot_score": 15.9
   },
   {
    "id": "aad5341f6883e4caa8b86339e5a6e2c05d09f68b",
@@ -208,7 +208,7 @@
    "source_id": "finkit-ipo",
    "published": "2026-11-10T16:00:00+00:00",
    "zh_title": "新荷花 (02206)",
-   "zh_oneliner": "中药饮片企业新荷花 11 月 11 日上市，招股价 40.20 至 50.55 港元。",
+   "zh_oneliner": "中药饮片企业新荷花 11 月 11 日上市，招股价 40.20 至 50.55 港元。首日收涨 71.64%，暗盘涨 23.23%。",
    "category": "debut",
    "category_label": "首日表现",
    "tier": "T2",
@@ -233,7 +233,7 @@
    "source_id": "finkit-ipo",
    "published": "2026-11-09T16:00:00+00:00",
    "zh_title": "芯德半導體 (07672)",
-   "zh_oneliner": "半导体封测企业芯德半导体 11 月 10 日上市，招股价 8.60 至 9.60 港元。",
+   "zh_oneliner": "半导体封测企业芯德半导体 11 月 10 日上市，招股价 8.60 至 9.60 港元。首日收涨 28.38%，暗盘涨 13.29%。",
    "category": "debut",
    "category_label": "首日表现",
    "tier": "T2",
