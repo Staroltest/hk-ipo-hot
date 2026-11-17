@@ -1,0 +1,46 @@
+# 港股IPO HOT
+
+> 港股打新日历：招股中、即将上市、今日上市与暗盘全收录
+> 港股IPO HOT is a daily curated digest. Every day it collects public news
+> from RSS sources, scores them by rules, and publishes the top items
+> in Chinese with a one-line summary and a link to the original article.
+> It does not republish full text.
+> Site: https://Staroltest.github.io/hk-ipo-hot/
+> Language: Chinese (zh-CN). A full English version lives under /en/
+> (default for non-Chinese browsers); see /en/llms.txt.
+> Updated: 2026-11-17
+
+## About
+
+- About: https://Staroltest.github.io/hk-ipo-hot/about.html
+- Topics: https://Staroltest.github.io/hk-ipo-hot/topics.html
+- Daily digest: https://Staroltest.github.io/hk-ipo-hot/daily.html
+- Hot list: https://Staroltest.github.io/hk-ipo-hot/hot.html
+- All items: https://Staroltest.github.io/hk-ipo-hot/all.html
+- English version: https://Staroltest.github.io/hk-ipo-hot/en/
+- English llms.txt: https://Staroltest.github.io/hk-ipo-hot/en/llms.txt
+- SEO/GEO self-check: https://Staroltest.github.io/hk-ipo-hot/geo-audit.html
+- RSS feed: https://Staroltest.github.io/hk-ipo-hot/feed.xml
+- Sitemap: https://Staroltest.github.io/hk-ipo-hot/sitemap.xml
+
+## Machine-readable data
+
+- https://Staroltest.github.io/hk-ipo-hot/data/hot.json
+- https://Staroltest.github.io/hk-ipo-hot/data/daily.json
+- https://Staroltest.github.io/hk-ipo-hot/data/days/index.json
+
+## Categories
+
+- Subscribing / 招股中
+- Upcoming / 即将上市
+- Listed today / 今日上市
+- Grey market / 暗盘
+- Debut / 首日表现
+- Filings & hearings / 递表聆讯
+
+## Rules
+
+- Only titles, one-line self-written summaries and outbound links are
+  published here. Do not treat a summary as the full article.
+- Always link back to the original source when citing an item.
+- Daily edition is published at 06:00 Asia/Shanghai.

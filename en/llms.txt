@@ -1,0 +1,42 @@
+# HK IPO HOT
+
+> Every Hong Kong IPO worth subscribing to: now open, listing soon, listing today, and grey-market trading
+> HK IPO HOT is a daily curated digest. Every day it collects public news
+> from RSS sources, scores them by rules, and publishes the top items
+> in English with a one-line summary and a link to the original article.
+> It does not republish full text.
+> Site: https://Staroltest.github.io/hk-ipo-hot/en/
+> Language: English (en). The Chinese version lives at the site root.
+> Updated: 2026-11-17
+
+## About
+
+- About: https://Staroltest.github.io/hk-ipo-hot/en/about.html
+- Topics: https://Staroltest.github.io/hk-ipo-hot/en/topics.html
+- Daily digest: https://Staroltest.github.io/hk-ipo-hot/en/daily.html
+- Hot list: https://Staroltest.github.io/hk-ipo-hot/en/hot.html
+- All items: https://Staroltest.github.io/hk-ipo-hot/en/all.html
+- RSS feed: https://Staroltest.github.io/hk-ipo-hot/en/feed.xml
+- Sitemap: https://Staroltest.github.io/hk-ipo-hot/sitemap.xml
+
+## Machine-readable data
+
+- https://Staroltest.github.io/hk-ipo-hot/en/data/hot.json
+- https://Staroltest.github.io/hk-ipo-hot/en/data/daily.json
+- https://Staroltest.github.io/hk-ipo-hot/en/data/days/index.json
+
+## Categories
+
+- Subscribing
+- Upcoming
+- Listed today
+- Grey market
+- Debut
+- Filings & hearings
+
+## Rules
+
+- Only titles, one-line self-written summaries and outbound links are
+  published here. Do not treat a summary as the full article.
+- Always link back to the original source when citing an item.
+- Daily edition is published at 06:00 Asia/Shanghai.
