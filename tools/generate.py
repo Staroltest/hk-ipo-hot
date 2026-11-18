@@ -4086,6 +4086,41 @@ def build_geo_audit(site, root, site_url, today_iso):
 
 # ---------------------------------------------------------------- 主流程
 
+def _hkipox_additions(it):
+    """HKIPOx 实时数字补全（只补渲染层内存，不写回 zh_draft.json / store.json）：
+    首日表现 -> 首日涨跌 + 暗盘涨跌；招股中 / 即将上市 / 暗盘 / 今日上市 ->
+    认购倍数（招股期内为滚动估计，中文加“约”字）。简介里已有该数字时返回
+    空串，不重复补。句式与 2026-11-18 人工合并的 8 条首日简介保持一致。"""
+    perf = it.get("hkipox") or {}
+    zh = it.get("zh_oneliner") or ""
+    fd, grey, mult = perf.get("first_day"), perf.get("grey"), perf.get("multiple")
+    if fd and "首日收" not in zh:
+        if fd.startswith("+"):
+            fd_dir, fd_v, fd_en, fd_ev = "收涨", fd[1:], "up", fd[1:]
+        elif fd.startswith("-"):
+            fd_dir, fd_v, fd_en, fd_ev = "收跌", fd[1:], "down", fd[1:]
+        else:
+            fd_dir, fd_v, fd_en, fd_ev = "收平", fd, "flat", fd
+        if grey:
+            if grey.startswith("+"):
+                g_dir, g_v, g_en, g_ev = "涨", grey[1:], "rising", grey[1:]
+            elif grey.startswith("-"):
+                g_dir, g_v, g_en, g_ev = "跌", grey[1:], "falling", grey[1:]
+            else:
+                g_dir, g_v, g_en, g_ev = "平", grey, "unchanged", grey
+            return ("首日%s %s，暗盘%s %s。" % (fd_dir, fd_v, g_dir, g_v),
+                    "It closed its first day %s %s, after %s %s in the grey market."
+                    % (fd_en, fd_ev, g_en, g_ev))
+        return ("首日%s %s。" % (fd_dir, fd_v),
+                "It closed its first day %s %s." % (fd_en, fd_ev))
+    if (mult and it.get("category") in
+            ("subscribing", "upcoming", "grey-market", "listed-today")
+            and "倍" not in zh):  # “倍”是补句的标志词；简介正文本身含“认购”二字时不能用“认购”去重
+        v = mult[:-1] if mult.endswith("x") else mult
+        return ("认购约 %s 倍。" % v, "Oversubscribed about %s times." % v)
+    return "", ""
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--daily", action="store_true", help="同时产出当日日报")
@@ -4212,6 +4247,8 @@ def main():
                     old = history[it["id"]]
                     old["title"] = it["title"]
                     old["summary"] = it["summary"]
+                    if it.get("hkipox"):
+                        old["hkipox"] = it["hkipox"]
                     if it.get("published"):
                         old["published"] = it["published"].astimezone(timezone.utc).isoformat()
                     if it.get("category"):
@@ -4228,6 +4265,8 @@ def main():
             }
             if it.get("category"):
                 entry["category"] = it["category"]
+            if it.get("hkipox"):
+                entry["hkipox"] = it["hkipox"]
             if it.get("summary_full"):
                 entry["summary_full"] = it["summary_full"]
             enrich_store_item(entry)
@@ -4270,6 +4309,18 @@ def main():
             except ValueError:
                 pass
         item["is_new"] = is_new
+        # HKIPOx 数字补全（渲染层内存，不写回历史与草稿；已有数字不重复补）
+        zh_add, en_add = _hkipox_additions(item)
+        if zh_add:
+            base = item.get("zh_oneliner") or ""
+            if base and base[-1] not in "。！？.!?":
+                base += "。"
+            item["zh_oneliner"] = base + zh_add
+        if en_add:
+            base = item.get("en_oneliner") or ""
+            if base and base[-1] not in ".!?":
+                base += "."
+            item["en_oneliner"] = (base + " " + en_add).strip() if base else en_add
         live.append(item)
 
     # 可选 LLM 重排（无 Key 时直接跳过）

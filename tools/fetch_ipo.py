@@ -19,9 +19,12 @@ generate.py 收到后直接采用，之后每轮刷新（IPO 状态会变）。
   再拉详情页取准确暗盘日（"Grey market: YYYY-MM-DD"）。
 - HKEX 新上市证券表（辅，只验证不单独成条）：近两周的
   New Listing 行，核对 FinKit 的上市日是否一致；结果只打印日志。
-- HKIPOx（https://hkipox.com/，2026-11-18 起 verify 观察期）：
-  首页三张静态表含认购倍数、一手中签率、暗盘涨幅、首日涨幅，是本站
-  首日涨跌幅的候选补全源；观察 1-2 天稳定后再接数据补全。
+- HKIPOx（https://hkipox.com/）：2026-11-18 起 verify 观察期，
+  2026-11-19 转正为补全源——两天实测稳定（HTTP 200、三张静态表结构
+  未变），8 条首日表现数值与财华社 / Finimize / Finet 周报逐一核对
+  一致。首页表提供认购倍数、暗盘涨幅、首日涨幅，按代码挂到 FinKit
+  条目上（只补渲染层数字，不改 zh_draft.json 草稿）；招股中的认购
+  倍数是招股期内的滚动估计，展示时加“约”字。
 - TradingView IPO Calendar 只作人工交叉验证，不接入。
 
 版权：只取招股事实（公司名、代码、价格区间、日期、保荐人）与链接，
@@ -278,32 +281,47 @@ def parse_hkipox_home(body):
             v = (v or "").strip()
             return v if v and v != "—" else None
 
+        mult_raw = cell("认购倍数") or None
         out[code] = {
             "name": cell("名称"),
             "listing": listing,
-            "multiple": cell("认购倍数") or None,
+            "multiple": None if mult_raw in (None, "—") else mult_raw,
             "grey": pct(cell("暗盘涨幅")),
             "first_day": pct(cell("首日涨幅")),
         }
     return out
 
 
+_HKIPOX_CACHE = {}
+
+
+def _load_hkipox(today):
+    """拉取并解析 HKIPOx 首页三张表，按代码缓存；失败返回 {}（不中断整轮）。
+    招股中的认购倍数是招股期内的滚动估计，展示时加“约”字。"""
+    global _HKIPOX_CACHE
+    if _HKIPOX_CACHE:
+        return _HKIPOX_CACHE
+    try:
+        perf = parse_hkipox_home(_http_get(HKIPOX_HOME))
+        listed = [c for c, v in perf.items() if v["first_day"]]
+        live = [c for c, v in perf.items()
+                if not v["first_day"] and v["listing"] and v["listing"] >= today]
+        print("hkipox: %d rows (%d listed with first-day %%, "
+              "%d subscribing/pending)" % (len(perf), len(listed), len(live)))
+        _HKIPOX_CACHE = perf
+        return perf
+    except Exception as e:
+        print("hkipox failed: %s" % str(e)[:80])
+        return {}
+
+
 def fetch_ipo_items(src, now):
     """generate.py 的入口：按 sources.json 的源返回条目列表。"""
     today = now.astimezone(CST).date()
     if src.get("id") == "hkipox":
-        # HKIPOx：2026-11-18 起 verify 观察期——只解析、不成条；
-        # 首页三张表进日志，供核对首日涨跌幅数据质量。稳定 1-2 天后
-        # 再接首日涨跌幅 / 暗盘涨幅 / 认购倍数补全。
-        try:
-            perf = parse_hkipox_home(_http_get(src["url"]))
-            listed = [c for c, v in perf.items() if v["first_day"]]
-            live = [c for c, v in perf.items()
-                    if not v["first_day"] and v["listing"] and v["listing"] >= today]
-            print("hkipox verify: %d rows (%d listed with first-day %%, "
-                  "%d subscribing/pending)" % (len(perf), len(listed), len(live)))
-        except Exception as e:
-            print("hkipox verify failed: %s" % str(e)[:80])
+        # HKIPOx：2026-11-19 起为补全源——只解析、不成条；按代码缓存，
+        # 由 FinKit 分支挂到条目上（首日涨跌 / 暗盘涨跌 / 认购倍数）。
+        _load_hkipox(today)
         return []
     if src.get("role") == "verify":
         # HKEX 表：只解析、不成条；行数进日志，供核对。
@@ -344,4 +362,12 @@ def fetch_ipo_items(src, now):
     print("finkit: %d cards parsed (%d ETFs skipped), hkex table %d rows, "
           "%d/%d listing dates confirmed"
           % (len(raw_all), n_etf, rows, matched, checked))
+    # HKIPOx 补全：首日涨跌 / 暗盘涨跌 / 认购倍数按代码挂到条目上，
+    # 只进内部字段（渲染层再决定是否展示），不改公开简介草稿。
+    perf = _load_hkipox(today)
+    for ipo, item in zip(raw, items):
+        p = perf.get(ipo["code"])
+        if p:
+            item["hkipox"] = {"multiple": p["multiple"], "grey": p["grey"],
+                              "first_day": p["first_day"]}
     return items
