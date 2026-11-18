@@ -1,0 +1,37 @@
+{
+ "kind": "daily",
+ "key": "2026-11-19",
+ "label": "2026年11月19日",
+ "date": "2026年11月19日",
+ "date_iso": "2026-11-19",
+ "issue": 3,
+ "generated_at": "2026-11-18T22:21:36.969586+00:00",
+ "summary": "过去 24 小时共收录 1 条动态，精选 1 条（招股中 1 条）。头条：先通醫藥－Ｂ (09941)。",
+ "items": [
+  {
+   "id": "876e3441adc79ae23f60d8cce20951343453dd4c",
+   "title": "Beijing Sinotau International Pharmaceutical Technology Co., Ltd. (09941)",
+   "link": "https://finkit.hk/en/ipo/09941",
+   "source": "FinKit IPO Snapshot",
+   "source_id": "finkit-ipo",
+   "published": "2026-11-23T16:00:00+00:00",
+   "zh_title": "先通醫藥－Ｂ (09941)",
+   "zh_oneliner": "创新药企先通医药正在招股，招股价 52 至 68 港元，11 月 19 日截止认购、24 日上市，暗盘在 23 日；主攻放射性药物诊断与治疗。",
+   "category": "subscribing",
+   "category_label": "招股中",
+   "tier": "T2",
+   "tags": [
+    "认购",
+    "保荐人",
+    "上市"
+   ],
+   "score": 100,
+   "reason": "涉及认购与保荐人 · 6 小时内发布",
+   "is_new": false,
+   "trend": "same",
+   "hot_score": 287.7,
+   "prev_rank": 1,
+   "prev_hot_score": 289.0
+  }
+ ]
+}
