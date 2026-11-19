@@ -1,12 +1,12 @@
 {
  "kind": "daily",
- "key": "2026-11-19",
- "label": "Nov 19",
- "date": "November 19, 2026",
- "date_iso": "2026-11-19",
- "issue": 3,
- "generated_at": "2026-11-18T23:34:54.129019+00:00",
- "summary": "1 items collected in the past 24 hours, 1 picks (Subscribing 1). Headline: Beijing Sinotau International Pharmaceutical Technology Co., Ltd. (09941).",
+ "key": "2026-11-20",
+ "label": "Nov 20",
+ "date": "November 20, 2026",
+ "date_iso": "2026-11-20",
+ "issue": 4,
+ "generated_at": "2026-11-19T22:21:42.219874+00:00",
+ "summary": "1 items collected in the past 24 hours, 1 picks (Upcoming 1). Headline: Beijing Sinotau International Pharmaceutical Technology Co., Ltd. (09941).",
  "items": [
   {
    "id": "876e3441adc79ae23f60d8cce20951343453dd4c",
@@ -16,9 +16,9 @@
    "source_id": "finkit-ipo",
    "published": "2026-11-23T16:00:00+00:00",
    "en_title": "Beijing Sinotau International Pharmaceutical Technology Co., Ltd. (09941)",
-   "en_oneliner": "Biotech firm Sinotau is now taking subscriptions at HK$52.00-68.00, closing 19 November and listing 24 November, with grey-market trading on 23 November; it focuses on radiopharmaceutical diagnostics and therapies. Oversubscribed about 1659.55 times.",
-   "category": "subscribing",
-   "category_label": "Subscribing",
+   "en_oneliner": "Biotech firm Sinotau is now taking subscriptions at HK$52.00-68.00, closing 19 November and listing 24 November, with grey-market trading on 23 November; it focuses on radiopharmaceutical diagnostics and therapies. Oversubscribed about 3801.34 times.",
+   "category": "upcoming",
+   "category_label": "Upcoming",
    "tier": "T2",
    "tags": [
     "Subscription",
@@ -26,12 +26,12 @@
     "Listing"
    ],
    "score": 100,
-   "reason": "Covers Subscription and Sponsor · Published within 6 hours",
+   "reason": "Covers Listing and Sponsor · Published within 6 hours",
    "is_new": false,
    "trend": "same",
-   "hot_score": 284.4,
+   "hot_score": 230.1,
    "prev_rank": 1,
-   "prev_hot_score": 284.4
+   "prev_hot_score": 231.2
   }
  ]
 }
