@@ -4304,7 +4304,8 @@ def main():
         item["score"] = score(item, cfg, now)
         item["reason"] = reason_for(item, cfg, now)
         item["category_label_en"] = cat_label_en.get(item["category"], item["category"])
-        item["tags_en"] = labels_for_en(item, cfg)[:3]
+        item["tags_en"] = [TAG_LABELS_EN[t] for t in item["tags"]
+                          if t in TAG_LABELS_EN][:3] or labels_for_en(item, cfg)[:3]
         item["reason_en"] = reason_for_en(item, cfg, now)
         # 当日新到：今天首次被本站收录，且本身也是 24 小时内发布的
         # （只按收录日期会把建站日批量回填的旧文也标上“新”）
