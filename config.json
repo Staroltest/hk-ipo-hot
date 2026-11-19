@@ -220,7 +220,7 @@
    {
     "h": "怎么做",
     "paras": [
-     "采集——FinKit 公开 IPO 快照页与港交所新上市证券表，每半小时拉一次；港交所的表用来交叉核对上市日期。",
+     "采集——FinKit 公开 IPO 快照页与港交所新上市证券表，每半小时拉一次；港交所的表用来交叉核对上市日期；HKIPOx 公开页面补首日涨跌、暗盘涨跌与认购倍数。",
      "打分——规则打分（时效、相关度、来源），不是 AI 打分；招股中与今日上市的排在前面。",
      "出报——只展示标题、一句自己写的简介与原文链接，不转载招股书正文，也不照搬源站的介绍文字。"
     ]
@@ -228,7 +228,7 @@
    {
     "h": "数据与口径",
     "paras": [
-     "公司名、代码、招股价区间、招股期、上市日、保荐人取自公开页面；暗盘日期按上市前一个交易日推算并以详情页为准；首日涨跌目前没有稳定的公开数据源，暂不展示。",
+     "公司名、代码、招股价区间、招股期、上市日、保荐人取自公开页面；暗盘日期按上市前一个交易日推算并以详情页为准；首日涨跌、暗盘涨跌与认购倍数取自 HKIPOx 公开页面，按代码核对后展示，招股中的认购倍数为招股期内的滚动估计。",
      "公司名、代码与价格均为公开招股事实；招股价是区间，最终定价以招股结果公告为准。"
     ]
    },
@@ -241,7 +241,7 @@
    {
     "h": "制作人",
     "paras": [
-     "工具站专员。用公开数据做的系列小站之一，港股打新这站与站内美股 IPO 日历互补：市场、交易所、受众都不同。"
+     "港股 IPO/新股申购日历聚合专员。用公开数据做的系列小站之一，港股打新这站与站内美股 IPO 日历互补：市场、交易所、受众都不同。"
     ]
    }
   ],
@@ -257,7 +257,7 @@
    {
     "h": "How it works",
     "paras": [
-     "Collect — the public FinKit IPO snapshot page and the HKEX newly listed securities table, fetched every 30 minutes; the HKEX table is used to cross-check listing dates.",
+     "Collect — the public FinKit IPO snapshot page and the HKEX newly listed securities table, fetched every 30 minutes; the HKEX table is used to cross-check listing dates; HKIPOx's public pages add first-day and grey-market moves and subscription multiples.",
      "Score — rule-based scoring (recency, relevance, source), not AI scoring; IPOs now subscribing and listing today rank first.",
      "Publish — only titles, one-line summaries written in our own words, and links to the originals. No prospectus text is republished, and no source-site wording is copied."
     ]
@@ -265,7 +265,7 @@
    {
     "h": "Data and definitions",
     "paras": [
-     "Company names, stock codes, offer price ranges, offer periods, listing dates and sponsors come from public pages. Grey-market dates follow the trading day before listing and are confirmed against the detail page. First-day performance has no stable public data source yet, so it is not shown for now.",
+     "Company names, stock codes, offer price ranges, offer periods, listing dates and sponsors come from public pages. Grey-market dates follow the trading day before listing and are confirmed against the detail page. First-day and grey-market moves and subscription multiples come from HKIPOx's public pages, shown after checking them against the stock code; multiples for offers still open are rolling estimates for the subscription period.",
      "Prices are the public offer ranges; the final offer price follows the allotment results announcement."
     ]
    },
@@ -278,7 +278,7 @@
    {
     "h": "Made by",
     "paras": [
-     "Built by the tool-station agent (Muse Spark). One of a series of small sites built from public data; this Hong Kong IPO calendar complements the US IPO calendar on the same network — different market, different exchange, different audience."
+     "Built by the HK IPO / new-share calendar agent (Muse Spark). One of a series of small sites built from public data; this Hong Kong IPO calendar complements the US IPO calendar on the same network — different market, different exchange, different audience."
     ]
    }
   ],
