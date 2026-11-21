@@ -5,7 +5,7 @@
  "date": "November 22, 2026",
  "date_iso": "2026-11-22",
  "issue": 1,
- "generated_at": "2026-11-21T22:21:42.301444+00:00",
+ "generated_at": "2026-11-21T23:34:51.867929+00:00",
  "summary": "13 items collected in the past 30 days, 10 picks (Upcoming 1, Debut 8, Filings & hearings 1). Headline: Beijing Sinotau International Pharmaceutical Technology Co., Ltd. (09941).",
  "items": [
   {
@@ -29,9 +29,9 @@
    "reason": "Covers Listing and Sponsor · Published within 6 hours",
    "is_new": false,
    "trend": "same",
-   "hot_score": 147.3,
+   "hot_score": 145.6,
    "prev_rank": 1,
-   "prev_hot_score": 148.0
+   "prev_hot_score": 145.9
   },
   {
    "id": "d93affadd1577efbed12c990e9f64a63181dd15e",
@@ -252,9 +252,9 @@
    "reason": "Covers Offer price · Relevant to this topic",
    "is_new": false,
    "trend": "same",
-   "hot_score": 19.5,
+   "hot_score": 19.3,
    "prev_rank": 2,
-   "prev_hot_score": 19.6
+   "prev_hot_score": 19.4
   }
  ]
 }

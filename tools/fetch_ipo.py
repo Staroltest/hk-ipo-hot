@@ -25,6 +25,12 @@ generate.py 收到后直接采用，之后每轮刷新（IPO 状态会变）。
   一致。首页表提供认购倍数、暗盘涨幅、首日涨幅，按代码挂到 FinKit
   条目上（只补渲染层数字，不改 zh_draft.json 草稿）；招股中的认购
   倍数是招股期内的滚动估计，展示时加“约”字。
+- vbkr 華盛証券新股列表（https://www.vbkr.com/ipo/hk/v2/ipo-hk-index）：
+  2026-11-21 起 verify 观察期，2026-11-22 转正为验证源——两天实测
+  稳定（HTTP 200、三张服务端渲染表结构未变），待上市表提供待上市
+  代码与上市日，用于核对 FinKit 的待上市上市日（HKEX 表只覆盖已上
+  市，核不到待上市）；只验证不单独成条。介绍上市（如 01821 中旅港
+  澳）FinKit 无条目，只进日志不建条目；已遞表 pipeline 表暂不解析。
 - TradingView IPO Calendar 只作人工交叉验证，不接入。
 
 版权：只取招股事实（公司名、代码、价格区间、日期、保荐人）与链接，
@@ -45,8 +51,10 @@ FINKIT_LIST = "https://finkit.hk/en/ipo"
 FINKIT_DETAIL = "https://finkit.hk/en/ipo/{}"
 HKEX_NEWLY = ("https://www.hkex.com.hk/services/trading/securities/"
               "trading-news/newly-listed-securities?sc_lang=en")
+VBKR_LIST = "https://www.vbkr.com/ipo/hk/v2/ipo-hk-index"
 
 _HKEX_CACHE = {}
+_VBKR_CACHE = {}
 
 MONTHS = {m: i + 1 for i, m in enumerate(
     ["January", "February", "March", "April", "May", "June", "July",
@@ -208,6 +216,69 @@ def verify_hkex(finkit_items):
     return len(hkex), matched, checked
 
 
+def parse_vbkr_upcoming(body):
+    """解析 vbkr 待上市表：返回 {code: listing_date}。
+
+    待上市表以“暗盤時間”列为标志（可認購表无此列、已遞表无此表头）；
+    按表头定位“股票代碼”“上市”两列，上市日为 YYYY-MM-DD，“--”跳过。
+    """
+    text = body.decode("utf-8", "ignore") if isinstance(body, bytes) else body
+    out = {}
+    for tb in re.findall(r"<table.*?</table>", text, re.S):
+        if "暗盤時間" not in tb:
+            continue
+        rows = re.findall(r"<tr.*?</tr>", tb, re.S)
+        if not rows:
+            continue
+        header = [_clean(c) for c in
+                  re.findall(r"<t[dh][^>]*>(.*?)</t[dh]>", rows[0], re.S)]
+        try:
+            ci = header.index("股票代碼")
+            li = header.index("上市")
+        except ValueError:
+            continue
+        for row in rows[1:]:
+            cells = [_clean(c) for c in
+                     re.findall(r"<t[dh][^>]*>(.*?)</t[dh]>", row, re.S)]
+            if len(cells) <= max(ci, li):
+                continue
+            code = re.sub(r"\D", "", cells[ci])
+            dm = re.match(r"(\d{4})-(\d{2})-(\d{2})", cells[li].strip())
+            if dm and len(code) == 5:
+                try:
+                    out[code] = date(int(dm.group(1)), int(dm.group(2)),
+                                   int(dm.group(3)))
+                except ValueError:
+                    pass
+    return out
+
+
+def verify_vbkr(finkit_items):
+    """用 vbkr 待上市表核对 FinKit 的待上市上市日；取不到时静默跳过。
+    返回 (rows, matched, checked, extra_codes)：extra 为 vbkr 有、
+    FinKit 快照里没有的代码（如介绍上市），只进日志不建条目。"""
+    try:
+        if "map" not in _VBKR_CACHE:
+            _VBKR_CACHE["map"] = parse_vbkr_upcoming(_http_get(VBKR_LIST))
+        vbkr = _VBKR_CACHE["map"]
+    except Exception:
+        return 0, 0, 0, []
+    checked = matched = 0
+    finkit_codes = set()
+    for it in finkit_items:
+        finkit_codes.add(it["code"])
+        if not it["listing"]:
+            continue
+        d = vbkr.get(it["code"])
+        if d is None:
+            continue
+        checked += 1
+        if d == it["listing"]:
+            matched += 1
+    extra = sorted(c for c in vbkr if c not in finkit_codes)
+    return len(vbkr), matched, checked, extra
+
+
 def categorize(ipo, today):
     listing = ipo["listing"]
     grey = ipo.get("grey")
@@ -324,12 +395,16 @@ def fetch_ipo_items(src, now):
         _load_hkipox(today)
         return []
     if src.get("role") == "verify":
-        # HKEX 表：只解析、不成条；行数进日志，供核对。
+        # 验证源：只解析、不成条；行数进日志，供核对。
         try:
-            rows = parse_hkex_newly(_http_get(src["url"]))
-            print("hkex verify: %d newly listed rows parsed" % len(rows))
+            if src.get("id") == "vbkr":
+                rows = parse_vbkr_upcoming(_http_get(src["url"]))
+                print("vbkr verify: %d upcoming rows parsed" % len(rows))
+            else:
+                rows = parse_hkex_newly(_http_get(src["url"]))
+                print("hkex verify: %d newly listed rows parsed" % len(rows))
         except Exception as e:
-            print("hkex verify failed: %s" % str(e)[:80])
+            print("%s verify failed: %s" % (src.get("id"), str(e)[:80]))
         return []
     body = _http_get(src["url"])
     raw_all = parse_finkit_list(body)
@@ -341,6 +416,7 @@ def fetch_ipo_items(src, now):
     raw = fetch_grey_dates(raw, today)
     rows, matched, checked = verify_hkex(raw)
     hkex_map = _HKEX_CACHE.get("map", {})
+    vrows, vmatched, vchecked, vextra = verify_vbkr(raw)
     items = []
     for ipo in raw:
         cat = categorize(ipo, today)
@@ -360,8 +436,11 @@ def fetch_ipo_items(src, now):
             "category": cat,
         })
     print("finkit: %d cards parsed (%d ETFs skipped), hkex table %d rows, "
-          "%d/%d listing dates confirmed"
-          % (len(raw_all), n_etf, rows, matched, checked))
+          "%d/%d listing dates confirmed; vbkr upcoming %d rows, "
+          "%d/%d listing dates confirmed%s"
+          % (len(raw_all), n_etf, rows, matched, checked,
+             vrows, vmatched, vchecked,
+             (", vbkr-only: %s" % ",".join(vextra)) if vextra else ""))
     # HKIPOx 补全：首日涨跌 / 暗盘涨跌 / 认购倍数按代码挂到条目上，
     # 只进内部字段（渲染层再决定是否展示），不改公开简介草稿。
     perf = _load_hkipox(today)
