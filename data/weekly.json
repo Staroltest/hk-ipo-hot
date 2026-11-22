@@ -5,7 +5,7 @@
  "date": "2026年11月22日",
  "date_iso": "2026-11-22",
  "issue": 1,
- "generated_at": "2026-11-21T23:34:51.867929+00:00",
+ "generated_at": "2026-11-22T12:25:27.384464+00:00",
  "summary": "过去 7 天共收录 5 条动态，精选 5 条（即将上市 1 条、递表聆讯 4 条）。头条：先通醫藥－Ｂ (09941)。",
  "items": [
   {
@@ -16,7 +16,7 @@
    "source_id": "finkit-ipo",
    "published": "2026-11-23T16:00:00+00:00",
    "zh_title": "先通醫藥－Ｂ (09941)",
-   "zh_oneliner": "创新药企先通医药正在招股，招股价 52 至 68 港元，11 月 19 日截止认购、24 日上市，暗盘在 23 日；主攻放射性药物诊断与治疗。认购约 3801.34 倍。",
+   "zh_oneliner": "创新药企先通医药已于 11 月 19 日中午截止认购，招股价 52 至 68 港元，24 日上市，暗盘在 23 日；主攻放射性药物诊断与治疗。认购约 3801.34 倍。",
    "category": "upcoming",
    "category_label": "即将上市",
    "tier": "T2",
@@ -29,9 +29,9 @@
    "reason": "涉及上市与保荐人 · 6 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 145.6,
+   "hot_score": 129.2,
    "prev_rank": 1,
-   "prev_hot_score": 145.9
+   "prev_hot_score": 129.2
   },
   {
    "id": "36bc7ed1d24696bd219081ae07c463ecc28240e4",
@@ -52,9 +52,9 @@
    "reason": "涉及招股价 · 与本主题相关",
    "is_new": false,
    "trend": "same",
-   "hot_score": 19.3,
+   "hot_score": 17.1,
    "prev_rank": 2,
-   "prev_hot_score": 19.4
+   "prev_hot_score": 17.1
   },
   {
    "id": "bad33a893b94c69f933fd089b7691cb1d0bb5947",
@@ -75,9 +75,9 @@
    "reason": "涉及招股价 · 与本主题相关",
    "is_new": false,
    "trend": "same",
-   "hot_score": 19.3,
+   "hot_score": 17.1,
    "prev_rank": 3,
-   "prev_hot_score": 19.4
+   "prev_hot_score": 17.1
   },
   {
    "id": "0f2acae0fd461ccfe3dd7e8ad8b49259d5ee11e8",
@@ -98,9 +98,9 @@
    "reason": "涉及招股价 · 与本主题相关",
    "is_new": false,
    "trend": "same",
-   "hot_score": 19.3,
+   "hot_score": 17.1,
    "prev_rank": 4,
-   "prev_hot_score": 19.4
+   "prev_hot_score": 17.1
   },
   {
    "id": "711ddeac12bc4000fdc9ab1b5c5e24f5e4ebabe1",
@@ -121,9 +121,9 @@
    "reason": "涉及招股价 · 与本主题相关",
    "is_new": false,
    "trend": "same",
-   "hot_score": 19.3,
+   "hot_score": 17.1,
    "prev_rank": 5,
-   "prev_hot_score": 19.4
+   "prev_hot_score": 17.1
   }
  ]
 }
