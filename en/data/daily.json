@@ -5,7 +5,7 @@
  "date": "November 23, 2026",
  "date_iso": "2026-11-23",
  "issue": 7,
- "generated_at": "2026-11-22T22:21:44.198678+00:00",
+ "generated_at": "2026-11-22T23:32:00.298560+00:00",
  "summary": "1 items collected in the past 24 hours, 1 picks (Grey market 1). Headline: Beijing Sinotau International Pharmaceutical Technology Co., Ltd. (09941).",
  "items": [
   {
@@ -29,9 +29,9 @@
    "reason": "Covers Grey market and Sponsor · Published within 6 hours",
    "is_new": false,
    "trend": "same",
-   "hot_score": 117.8,
+   "hot_score": 116.5,
    "prev_rank": 1,
-   "prev_hot_score": 118.4
+   "prev_hot_score": 116.7
   }
  ]
 }
