@@ -4689,6 +4689,14 @@ def main():
     sm.append("</urlset>")
     with open(os.path.join(root, "sitemap.xml"), "w", encoding="utf-8") as f:
         f.write("\n".join(sm) + "\n")
+    # IndexNow key 文件（试点 2026-11-22，老板已批）：每轮都写到站根；key 在
+    # config.json site.indexnow_key。Bing/Yandex 用 https://hk-ipo-hot.pages.dev/<key>.txt
+    # 校验归属。git_push 用 rsync --delete，只同步工作目录内容，所以 key 文件必须由
+    # 生成器每轮产出，不能只靠手工拷一份（否则下一轮会被删掉）。
+    _in_key = (site.get("indexnow_key") or "").strip()
+    if _in_key:
+        with open(os.path.join(root, f"{_in_key}.txt"), "w", encoding="utf-8") as f:
+            f.write(_in_key + "\n")
     # llms.txt：每轮重写，给 AI 客户端的站点说明 + 机器可读入口
     with open(os.path.join(root, "llms.txt"), "w", encoding="utf-8") as f:
         f.write(build_llms_txt(site, cats, today_iso))
