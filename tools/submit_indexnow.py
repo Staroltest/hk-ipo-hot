@@ -61,7 +61,8 @@ def _save_state(path, urls):
 def _post(url, payload_bytes):
     req = urllib.request.Request(
         url, data=payload_bytes,
-        headers={"Content-Type": "application/json; charset=utf-8"},
+        headers={"Content-Type": "application/json; charset=utf-8",
+                 "User-Agent": "hk-ipo-hotBot/1.0 (+https://hk-ipo-hot.pages.dev)"},
         method="POST")
     try:
         with urllib.request.urlopen(req, timeout=30) as resp:
@@ -94,9 +95,12 @@ def main():
     host = site.get("url", "https://hk-ipo-hot.pages.dev").replace("https://", "").rstrip("/")
     key_location = f"https://{host}/{key}.txt"
 
-    # 前置：key 文件必须已上线
+    # 前置：key 文件必须已上线（urllib 默认 UA 会被 Cloudflare 挡 403，带上本站爬虫 UA）
+    _ua_req = urllib.request.Request(
+        key_location,
+        headers={"User-Agent": "hk-ipo-hotBot/1.0 (+https://hk-ipo-hot.pages.dev)"})
     try:
-        with urllib.request.urlopen(key_location, timeout=15) as resp:
+        with urllib.request.urlopen(_ua_req, timeout=15) as resp:
             if resp.status != 200:
                 print(f"key 文件未上线：{key_location} 返回 {resp.status}，先部署再提交")
                 return 1
