@@ -1,12 +1,12 @@
 {
  "kind": "daily",
- "key": "2026-11-23",
- "label": "Nov 23",
- "date": "November 23, 2026",
- "date_iso": "2026-11-23",
- "issue": 7,
- "generated_at": "2026-11-23T03:31:35.429708+00:00",
- "summary": "2 items collected in the past 24 hours, 2 picks (Grey market 1, Subscribing 1). Headline: Beijing Sinotau International Pharmaceutical Technology Co., Ltd. (09941).",
+ "key": "2026-11-24",
+ "label": "Nov 24",
+ "date": "November 24, 2026",
+ "date_iso": "2026-11-24",
+ "issue": 8,
+ "generated_at": "2026-11-23T22:21:38.624171+00:00",
+ "summary": "2 items collected in the past 24 hours, 2 picks (Listed today 1, Subscribing 1). Headline: Beijing Sinotau International Pharmaceutical Technology Co., Ltd. (09941).",
  "items": [
   {
    "id": "876e3441adc79ae23f60d8cce20951343453dd4c",
@@ -16,22 +16,22 @@
    "source_id": "finkit-ipo",
    "published": "2026-11-23T16:00:00+00:00",
    "en_title": "Beijing Sinotau International Pharmaceutical Technology Co., Ltd. (09941)",
-   "en_oneliner": "Biotech firm Sinotau closed subscriptions at noon on 19 November, priced at HK$52.00 (the bottom of its range), listing 24 November, with grey-market trading on 23 November; it focuses on radiopharmaceutical diagnostics and therapies. Oversubscribed about 3805.82 times.",
-   "category": "grey-market",
-   "category_label": "Grey market",
+   "en_oneliner": "Biotech firm Sinotau closed subscriptions at noon on 19 November, priced at HK$52.00 (the bottom of its range), listing 24 November; it focuses on radiopharmaceutical diagnostics and therapies. It closed the grey market down 1.25% at HK$51.35, after opening at HK$76.00. Oversubscribed about 5228.77 times.",
+   "category": "listed-today",
+   "category_label": "Listed today",
    "tier": "T2",
    "tags": [
     "Subscription",
     "Sponsor",
     "Listing"
    ],
-   "score": 100,
-   "reason": "Covers Grey market and Sponsor · Published within 6 hours",
+   "score": 95,
+   "reason": "Covers Listing and Sponsor · Published within 24 hours",
    "is_new": false,
    "trend": "same",
-   "hot_score": 112.3,
-   "prev_rank": 1,
-   "prev_hot_score": 112.5
+   "hot_score": 89.5,
+   "prev_rank": 2,
+   "prev_hot_score": 94.7
   },
   {
    "id": "bad33a893b94c69f933fd089b7691cb1d0bb5947",
@@ -41,7 +41,7 @@
    "source_id": "finkit-ipo",
    "published": "2026-12-03T16:00:00+00:00",
    "en_title": "Changzhou Microintelligence Co., Ltd. (03275)",
-   "en_oneliner": "Robotics firm Microintelligence relaunched its offering today at HK$12.07-15.69, with subscriptions open 23 November to 1 December and listing on 4 December; it withdrew its October attempt and now seeks up to about HK$585 million.",
+   "en_oneliner": "Robotics firm Microintelligence relaunched its offering today at HK$12.07-15.69, with subscriptions open 23 November to 1 December and listing on 4 December; it withdrew its October attempt and now seeks up to about HK$585 million. Oversubscribed about 21.73 times.",
    "category": "subscribing",
    "category_label": "Subscribing",
    "tier": "T2",
@@ -51,10 +51,10 @@
    "score": 80,
    "reason": "Covers Offer price · Published within 6 hours",
    "is_new": false,
-   "trend": "up",
-   "hot_score": 836.7,
-   "prev_rank": 3,
-   "prev_hot_score": 14.9
+   "trend": "same",
+   "hot_score": 702.3,
+   "prev_rank": 1,
+   "prev_hot_score": 705.5
   }
  ]
 }

@@ -2,11 +2,11 @@
  "kind": "weekly",
  "key": "2026-W48",
  "label": "2026年第48周",
- "date": "2026年11月23日",
- "date_iso": "2026-11-23",
+ "date": "2026年11月24日",
+ "date_iso": "2026-11-24",
  "issue": 2,
- "generated_at": "2026-11-23T03:31:35.429708+00:00",
- "summary": "过去 7 天共收录 5 条动态，精选 5 条（暗盘 1 条、招股中 1 条、递表聆讯 3 条）。头条：先通醫藥－Ｂ (09941)。",
+ "generated_at": "2026-11-23T22:21:38.624171+00:00",
+ "summary": "过去 7 天共收录 5 条动态，精选 5 条（今日上市 1 条、招股中 1 条、递表聆讯 3 条）。头条：先通醫藥－Ｂ (09941)。",
  "items": [
   {
    "id": "876e3441adc79ae23f60d8cce20951343453dd4c",
@@ -16,22 +16,22 @@
    "source_id": "finkit-ipo",
    "published": "2026-11-23T16:00:00+00:00",
    "zh_title": "先通醫藥－Ｂ (09941)",
-   "zh_oneliner": "创新药企先通医药已于 11 月 19 日中午截止认购，定价 52 港元（招股价区间下限），24 日上市，暗盘在 23 日；主攻放射性药物诊断与治疗。认购约 3805.82 倍。",
-   "category": "grey-market",
-   "category_label": "暗盘",
+   "zh_oneliner": "创新药企先通医药已于 11 月 19 日中午截止认购，定价 52 港元（招股价区间下限），24 日上市；主攻放射性药物诊断与治疗。暗盘收跌 1.25%（收 51.35 港元），盘初曾涨至 76 港元。认购约 5228.77 倍。",
+   "category": "listed-today",
+   "category_label": "今日上市",
    "tier": "T2",
    "tags": [
     "认购",
     "保荐人",
     "上市"
    ],
-   "score": 100,
-   "reason": "涉及暗盘与保荐人 · 6 小时内发布",
+   "score": 95,
+   "reason": "涉及上市与保荐人 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 112.3,
-   "prev_rank": 1,
-   "prev_hot_score": 112.5
+   "hot_score": 89.5,
+   "prev_rank": 2,
+   "prev_hot_score": 94.7
   },
   {
    "id": "bad33a893b94c69f933fd089b7691cb1d0bb5947",
@@ -41,7 +41,7 @@
    "source_id": "finkit-ipo",
    "published": "2026-12-03T16:00:00+00:00",
    "zh_title": "微億智造 (03275)",
-   "zh_oneliner": "机器人企业微亿智造今日重新招股，招股价 12.07 至 15.69 港元，11 月 23 日至 12 月 1 日认购，12 月 4 日上市；10 月曾撤回上市计划，这次募资上限约 5.85 亿港元。",
+   "zh_oneliner": "机器人企业微亿智造今日重新招股，招股价 12.07 至 15.69 港元，11 月 23 日至 12 月 1 日认购，12 月 4 日上市；10 月曾撤回上市计划，这次募资上限约 5.85 亿港元。认购约 21.73 倍。",
    "category": "subscribing",
    "category_label": "招股中",
    "tier": "T2",
@@ -51,10 +51,10 @@
    "score": 80,
    "reason": "涉及招股价 · 6 小时内发布",
    "is_new": false,
-   "trend": "up",
-   "hot_score": 836.7,
-   "prev_rank": 3,
-   "prev_hot_score": 14.9
+   "trend": "same",
+   "hot_score": 702.3,
+   "prev_rank": 1,
+   "prev_hot_score": 705.5
   },
   {
    "id": "36bc7ed1d24696bd219081ae07c463ecc28240e4",
@@ -75,9 +75,9 @@
    "reason": "涉及招股价 · 与本主题相关",
    "is_new": false,
    "trend": "same",
-   "hot_score": 14.9,
-   "prev_rank": 2,
-   "prev_hot_score": 14.9
+   "hot_score": 12.5,
+   "prev_rank": 3,
+   "prev_hot_score": 12.6
   },
   {
    "id": "0f2acae0fd461ccfe3dd7e8ad8b49259d5ee11e8",
@@ -98,9 +98,9 @@
    "reason": "涉及招股价 · 与本主题相关",
    "is_new": false,
    "trend": "same",
-   "hot_score": 14.9,
+   "hot_score": 12.5,
    "prev_rank": 4,
-   "prev_hot_score": 14.9
+   "prev_hot_score": 12.6
   },
   {
    "id": "711ddeac12bc4000fdc9ab1b5c5e24f5e4ebabe1",
@@ -121,9 +121,9 @@
    "reason": "涉及招股价 · 与本主题相关",
    "is_new": false,
    "trend": "same",
-   "hot_score": 14.9,
+   "hot_score": 12.5,
    "prev_rank": 5,
-   "prev_hot_score": 14.9
+   "prev_hot_score": 12.6
   }
  ]
 }
