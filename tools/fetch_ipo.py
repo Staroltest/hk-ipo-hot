@@ -353,6 +353,10 @@ def parse_hkipox_home(body):
             return v if v and v != "—" else None
 
         mult_raw = cell("认购倍数") or None
+        if mult_raw in ("0.0x", "0x", "0"):
+            # 刚开招股、倍数尚未滚动时 HKIPOx 显示 0.0x：当作缺失，
+            # 否则渲染层会写出“认购约 0.0 倍。”
+            mult_raw = None
         out[code] = {
             "name": cell("名称"),
             "listing": listing,

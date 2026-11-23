@@ -4266,6 +4266,14 @@ def main():
                     if it.get("category"):
                         old["category"] = it["category"]
                         old["category_label"] = cat_label.get(it["category"], it["category"])
+                    # 手动分类覆盖：FinKit 快照滞后时（如 03275 重新招股后
+                    # 仍显示 10 月旧卡片），store.json 里 category_override
+                    # 锁定的分类不被每轮刷新覆盖；FinKit 跟上后删掉该字段
+                    # 即可恢复自动。
+                    if old.get("category_override"):
+                        old["category"] = old["category_override"]
+                        old["category_label"] = cat_label.get(
+                            old["category"], old["category"])
                 continue  # 已收录：去重
             pub = it["published"] or now
             it["published"] = pub.astimezone(timezone.utc).isoformat()
