@@ -4102,7 +4102,11 @@ def _hkipox_additions(it):
     """HKIPOx 实时数字补全（只补渲染层内存，不写回 zh_draft.json / store.json）：
     首日表现 -> 首日涨跌 + 暗盘涨跌；招股中 / 即将上市 / 暗盘 / 今日上市 ->
     认购倍数（招股期内为滚动估计，中文加“约”字）。简介里已有该数字时返回
-    空串，不重复补。句式与 2026-11-18 人工合并的 8 条首日简介保持一致。"""
+    空串，不重复补。句式与 2026-11-18 人工合并的 8 条首日简介保持一致。
+    暗盘口径：HKIPOx 首页暗盘涨幅取辉立暗盘收盘（如 09941 为 -5.15%），
+    与富途暗盘收盘（如 09941 的 51.35 港元、-1.25%）是两个平台的数字，
+    不是错误；简介里已有暗盘数字时只补首日句，绝不并列两个暗盘数。
+    """
     perf = it.get("hkipox") or {}
     zh = it.get("zh_oneliner") or ""
     fd, grey, mult = perf.get("first_day"), perf.get("grey"), perf.get("multiple")
@@ -4113,7 +4117,7 @@ def _hkipox_additions(it):
             fd_dir, fd_v, fd_en, fd_ev = "收跌", fd[1:], "down", fd[1:]
         else:
             fd_dir, fd_v, fd_en, fd_ev = "收平", fd, "flat", fd
-        if grey:
+        if grey and "暗盘" not in zh:
             if grey.startswith("+"):
                 g_dir, g_v, g_en, g_ev = "涨", grey[1:], "rising", grey[1:]
             elif grey.startswith("-"):

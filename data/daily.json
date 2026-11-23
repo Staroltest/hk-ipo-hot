@@ -5,7 +5,7 @@
  "date": "2026年11月24日",
  "date_iso": "2026-11-24",
  "issue": 8,
- "generated_at": "2026-11-23T22:21:38.624171+00:00",
+ "generated_at": "2026-11-23T23:32:00.314692+00:00",
  "summary": "过去 24 小时共收录 2 条动态，精选 2 条（今日上市 1 条、招股中 1 条）。头条：先通醫藥－Ｂ (09941)。",
  "items": [
   {
@@ -29,9 +29,9 @@
    "reason": "涉及上市与保荐人 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 89.5,
+   "hot_score": 88.6,
    "prev_rank": 2,
-   "prev_hot_score": 94.7
+   "prev_hot_score": 88.7
   },
   {
    "id": "bad33a893b94c69f933fd089b7691cb1d0bb5947",
@@ -52,9 +52,9 @@
    "reason": "涉及招股价 · 6 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 702.3,
+   "hot_score": 694.7,
    "prev_rank": 1,
-   "prev_hot_score": 705.5
+   "prev_hot_score": 695.8
   }
  ]
 }
