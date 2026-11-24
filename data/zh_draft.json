@@ -1,15 +1,15 @@
 {
- "https://finkit.hk/en/ipo/09941": {
-  "en_oneliner": "Biotech firm Sinotau closed subscriptions at noon on 19 November, priced at HK$52.00 (the bottom of its range), listing 24 November; it focuses on radiopharmaceutical diagnostics and therapies. It closed the grey market down 1.25% at HK$51.35, after opening at HK$76.00.",
-  "en_title": "Beijing Sinotau International Pharmaceutical Technology Co., Ltd. (09941)",
-  "zh_oneliner": "创新药企先通医药已于 11 月 19 日中午截止认购，定价 52 港元（招股价区间下限），24 日上市；主攻放射性药物诊断与治疗。暗盘收跌 1.25%（收 51.35 港元），盘初曾涨至 76 港元。",
-  "zh_title": "先通醫藥－Ｂ (09941)"
+ "https://finkit.hk/en/ipo/02384": {
+  "en_oneliner": "Precision manufacturer Dongshan Precision listed on 28 October with an offer price of up to HK$93.80, making printed circuit boards and precision components. It closed its first day down 0.75%, after falling 5.53% in the grey market.",
+  "en_title": "Suzhou Dongshan Precision Manufacturing Co., Ltd. (02384)",
+  "zh_oneliner": "精密制造企业东山精密 10 月 28 日上市，招股价上限 93.80 港元，做印刷电路板与精密零部件。首日收跌 0.75%，暗盘跌 5.53%。",
+  "zh_title": "東山精密 (02384)"
  },
- "https://finkit.hk/en/ipo/06935": {
-  "en_oneliner": "Commercial space company Adaspace listed on 13 November at an offer range of HK$24.90-33.20, working on satellites and space applications. It closed its first day down 3.53%, after rising 8.43% in the grey market.",
-  "en_title": "Adaspace Technology Co., Ltd. (06935)",
-  "zh_oneliner": "商业航天公司国星宇航 11 月 13 日上市，招股价 24.90 至 33.20 港元，做卫星与航天应用。首日收跌 3.53%，暗盘涨 8.43%。",
-  "zh_title": "國星宇航 (06935)"
+ "https://finkit.hk/en/ipo/09621": {
+  "en_oneliner": "Energy storage company RelyEZ listed on 9 November at an offer range of HK$8.54-11.10. It closed its first day up 59%, after rising 121.47% in the grey market.",
+  "en_title": "RelyEZ Energy Storage Technology Co., Ltd. (09621)",
+  "zh_oneliner": "储能企业远信储能 11 月 9 日上市，招股价 8.54 至 11.10 港元。首日收涨 59%，暗盘涨 121.47%。",
+  "zh_title": "遠信儲能 (09621)"
  },
  "https://finkit.hk/en/ipo/06157": {
   "en_oneliner": "Tourism company Slender West Lake has published an offer range of HK$3.92-5.07, with the listing date still to be set.",
@@ -17,35 +17,11 @@
   "zh_oneliner": "文旅企业瘦西湖文旅已公布招股价区间 3.92 至 5.07 港元，上市时间待定。",
   "zh_title": "瘦西湖文旅 (06157)"
  },
- "https://finkit.hk/en/ipo/02206": {
-  "en_oneliner": "Traditional Chinese medicine company Neautus listed on 11 November at an offer range of HK$40.20-50.55. It closed its first day up 71.64%, after rising 23.23% in the grey market.",
-  "en_title": "Sichuan Neautus Traditional Chinese Medicine Co., Ltd. (02206)",
-  "zh_oneliner": "中药饮片企业新荷花 11 月 11 日上市，招股价 40.20 至 50.55 港元。首日收涨 71.64%，暗盘涨 23.23%。",
-  "zh_title": "新荷花 (02206)"
- },
- "https://finkit.hk/en/ipo/03275": {
-  "en_oneliner": "Robotics firm Microintelligence relaunched its offering today at HK$12.07-15.69, with subscriptions open 23 November to 1 December and listing on 4 December; it withdrew its October attempt and now seeks up to about HK$585 million.",
-  "en_title": "Changzhou Microintelligence Co., Ltd. (03275)",
-  "zh_oneliner": "机器人企业微亿智造今日重新招股，招股价 12.07 至 15.69 港元，11 月 23 日至 12 月 1 日认购，12 月 4 日上市；10 月曾撤回上市计划，这次募资上限约 5.85 亿港元。",
-  "zh_title": "微億智造 (03275)"
- },
- "https://finkit.hk/en/ipo/02384": {
-  "en_oneliner": "Precision manufacturer Dongshan Precision listed on 28 October with an offer price of up to HK$93.80, making printed circuit boards and precision components. It closed its first day down 0.75%, after falling 5.53% in the grey market.",
-  "en_title": "Suzhou Dongshan Precision Manufacturing Co., Ltd. (02384)",
-  "zh_oneliner": "精密制造企业东山精密 10 月 28 日上市，招股价上限 93.80 港元，做印刷电路板与精密零部件。首日收跌 0.75%，暗盘跌 5.53%。",
-  "zh_title": "東山精密 (02384)"
- },
- "https://finkit.hk/en/ipo/02065": {
-  "en_oneliner": "Robotics chipmaker Amicro listed on 12 November at an offer range of HK$9.27-11.58. It closed its first day up 38.18%, after rising 32.32% in the grey market.",
-  "en_title": "Amicro Technology Co., Ltd. (02065)",
-  "zh_oneliner": "机器人芯片企业一微科技 11 月 12 日上市，招股价 9.27 至 11.58 港元。首日收涨 38.18%，暗盘涨 32.32%。",
-  "zh_title": "一微科技 (02065)"
- },
- "https://finkit.hk/en/ipo/09621": {
-  "en_oneliner": "Energy storage company RelyEZ listed on 9 November at an offer range of HK$8.54-11.10. It closed its first day up 59%, after rising 121.47% in the grey market.",
-  "en_title": "RelyEZ Energy Storage Technology Co., Ltd. (09621)",
-  "zh_oneliner": "储能企业远信储能 11 月 9 日上市，招股价 8.54 至 11.10 港元。首日收涨 59%，暗盘涨 121.47%。",
-  "zh_title": "遠信儲能 (09621)"
+ "https://finkit.hk/en/ipo/09917": {
+  "en_oneliner": "Semiconductor firm Denglin listed on 10 November at an offer range of HK$231.00-288.00, the highest pricing among this batch of listings. It closed its first day down 7.79%, after falling 4.24% in the grey market.",
+  "en_title": "Suzhou Denglin Technology Co., Ltd. (09917)",
+  "zh_oneliner": "半导体企业登临科技 11 月 10 日上市，招股价 231 至 288 港元，定价是这批新股里最高的。首日收跌 7.79%，暗盘跌 4.24%。",
+  "zh_title": "登臨科技－Ｐ (09917)"
  },
  "https://finkit.hk/en/ipo/00054": {
   "en_oneliner": "Biotech firm Hemay has published an offer range of HK$15.50-18.90, but its listing date has been delayed and the outcome is still pending.",
@@ -59,22 +35,46 @@
   "zh_oneliner": "物流企业永康控股已公布招股价 2.44 港元，上市时间待定。",
   "zh_title": "永康控股 (02523)"
  },
- "https://finkit.hk/en/ipo/02681": {
-  "en_oneliner": "Semiconductor firm HOSIN listed on 12 November at an offer range of HK$72.29-82.90. It closed its first day down 0.04%, after falling 0.8% in the grey market.",
-  "en_title": "HOSIN Electronics Co., Ltd. (02681)",
-  "zh_oneliner": "半导体企业宏芯宇 11 月 12 日上市，招股价 72.29 至 82.90 港元。首日收跌 0.04%，暗盘跌 0.8%。",
-  "zh_title": "宏芯宇 (02681)"
- },
- "https://finkit.hk/en/ipo/09917": {
-  "en_oneliner": "Semiconductor firm Denglin listed on 10 November at an offer range of HK$231.00-288.00, the highest pricing among this batch of listings. It closed its first day down 7.79%, after falling 4.24% in the grey market.",
-  "en_title": "Suzhou Denglin Technology Co., Ltd. (09917)",
-  "zh_oneliner": "半导体企业登临科技 11 月 10 日上市，招股价 231 至 288 港元，定价是这批新股里最高的。首日收跌 7.79%，暗盘跌 4.24%。",
-  "zh_title": "登臨科技－Ｐ (09917)"
+ "https://finkit.hk/en/ipo/02206": {
+  "en_oneliner": "Traditional Chinese medicine company Neautus listed on 11 November at an offer range of HK$40.20-50.55. It closed its first day up 71.64%, after rising 23.23% in the grey market.",
+  "en_title": "Sichuan Neautus Traditional Chinese Medicine Co., Ltd. (02206)",
+  "zh_oneliner": "中药饮片企业新荷花 11 月 11 日上市，招股价 40.20 至 50.55 港元。首日收涨 71.64%，暗盘涨 23.23%。",
+  "zh_title": "新荷花 (02206)"
  },
  "https://finkit.hk/en/ipo/07672": {
   "en_oneliner": "Semiconductor packaging and testing firm Xinde listed on 10 November at an offer range of HK$8.60-9.60. It closed its first day up 28.38%, after rising 13.29% in the grey market.",
   "en_title": "Jiangsu Xinde Semiconductor Technology Co., Ltd. (07672)",
   "zh_oneliner": "半导体封测企业芯德半导体 11 月 10 日上市，招股价 8.60 至 9.60 港元。首日收涨 28.38%，暗盘涨 13.29%。",
   "zh_title": "芯德半導體 (07672)"
+ },
+ "https://finkit.hk/en/ipo/02065": {
+  "en_oneliner": "Robotics chipmaker Amicro listed on 12 November at an offer range of HK$9.27-11.58. It closed its first day up 38.18%, after rising 32.32% in the grey market.",
+  "en_title": "Amicro Technology Co., Ltd. (02065)",
+  "zh_oneliner": "机器人芯片企业一微科技 11 月 12 日上市，招股价 9.27 至 11.58 港元。首日收涨 38.18%，暗盘涨 32.32%。",
+  "zh_title": "一微科技 (02065)"
+ },
+ "https://finkit.hk/en/ipo/09941": {
+  "en_oneliner": "Biotech firm Sinotau closed subscriptions at noon on 19 November, priced at HK$52.00 (the bottom of its range), listing 24 November; it focuses on radiopharmaceutical diagnostics and therapies. It closed the grey market down 1.25% at HK$51.35, after opening at HK$76.00.",
+  "en_title": "Beijing Sinotau International Pharmaceutical Technology Co., Ltd. (09941)",
+  "zh_oneliner": "创新药企先通医药已于 11 月 19 日中午截止认购，定价 52 港元（招股价区间下限），24 日上市；主攻放射性药物诊断与治疗。暗盘收跌 1.25%（收 51.35 港元），盘初曾涨至 76 港元。",
+  "zh_title": "先通醫藥－Ｂ (09941)"
+ },
+ "https://finkit.hk/en/ipo/06935": {
+  "en_oneliner": "Commercial space company Adaspace listed on 13 November at an offer range of HK$24.90-33.20, working on satellites and space applications. It closed its first day down 3.53%, after rising 8.43% in the grey market.",
+  "en_title": "Adaspace Technology Co., Ltd. (06935)",
+  "zh_oneliner": "商业航天公司国星宇航 11 月 13 日上市，招股价 24.90 至 33.20 港元，做卫星与航天应用。首日收跌 3.53%，暗盘涨 8.43%。",
+  "zh_title": "國星宇航 (06935)"
+ },
+ "https://finkit.hk/en/ipo/02681": {
+  "en_oneliner": "Semiconductor firm HOSIN listed on 12 November at an offer range of HK$72.29-82.90. It closed its first day down 0.04%, after falling 0.8% in the grey market.",
+  "en_title": "HOSIN Electronics Co., Ltd. (02681)",
+  "zh_oneliner": "半导体企业宏芯宇 11 月 12 日上市，招股价 72.29 至 82.90 港元。首日收跌 0.04%，暗盘跌 0.8%。",
+  "zh_title": "宏芯宇 (02681)"
+ },
+ "https://finkit.hk/en/ipo/03275": {
+  "en_oneliner": "Robotics firm Microintelligence relaunched its offering today at HK$12.07-15.69, with subscriptions open 23 November to 1 December and listing on 4 December; it withdrew its October attempt and now seeks up to about HK$585 million.",
+  "en_title": "Changzhou Microintelligence Co., Ltd. (03275)",
+  "zh_oneliner": "机器人企业微亿智造今日重新招股，招股价 12.07 至 15.69 港元，11 月 23 日至 12 月 1 日认购，12 月 4 日上市；10 月曾撤回上市计划，这次募资上限约 5.85 亿港元。",
+  "zh_title": "微億智造 (03275)"
  }
 }
