@@ -5,7 +5,7 @@
  "date": "November 25, 2026",
  "date_iso": "2026-11-25",
  "issue": 1,
- "generated_at": "2026-11-24T22:21:35.383631+00:00",
+ "generated_at": "2026-11-24T23:31:33.916155+00:00",
  "summary": "13 items collected in the past 30 days, 10 picks (Debut 9, Subscribing 1). Headline: Beijing Sinotau International Pharmaceutical Technology Co., Ltd. (09941).",
  "items": [
   {
@@ -29,9 +29,9 @@
    "reason": "Covers Sponsor and Listing · Relevant to this topic",
    "is_new": false,
    "trend": "same",
-   "hot_score": 60.3,
+   "hot_score": 59.7,
    "prev_rank": 2,
-   "prev_hot_score": 60.6
+   "prev_hot_score": 59.8
   },
   {
    "id": "bad33a893b94c69f933fd089b7691cb1d0bb5947",
@@ -41,7 +41,7 @@
    "source_id": "finkit-ipo",
    "published": "2026-12-03T16:00:00+00:00",
    "en_title": "Changzhou Microintelligence Co., Ltd. (03275)",
-   "en_oneliner": "Robotics firm Microintelligence relaunched its offering today at HK$12.07-15.69, with subscriptions open 23 November to 1 December and listing on 4 December; it withdrew its October attempt and now seeks up to about HK$585 million. Oversubscribed about 48.85 times.",
+   "en_oneliner": "Robotics firm Microintelligence relaunched its offering on 23 November at HK$12.07-15.69, with subscriptions open 23 November to 1 December and listing on 4 December; it withdrew its October attempt and now seeks up to about HK$585 million. Oversubscribed about 48.85 times.",
    "category": "subscribing",
    "category_label": "Subscribing",
    "tier": "T2",
@@ -52,9 +52,9 @@
    "reason": "Covers Offer price · Published within 6 hours",
    "is_new": false,
    "trend": "same",
-   "hot_score": 561.8,
+   "hot_score": 555.8,
    "prev_rank": 1,
-   "prev_hot_score": 564.4
+   "prev_hot_score": 556.6
   },
   {
    "id": "d93affadd1577efbed12c990e9f64a63181dd15e",
