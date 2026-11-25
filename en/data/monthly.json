@@ -2,12 +2,35 @@
  "kind": "monthly",
  "key": "2026-11",
  "label": "November 2026",
- "date": "November 25, 2026",
- "date_iso": "2026-11-25",
+ "date": "November 26, 2026",
+ "date_iso": "2026-11-26",
  "issue": 1,
- "generated_at": "2026-11-24T23:31:33.916155+00:00",
- "summary": "13 items collected in the past 30 days, 10 picks (Debut 9, Subscribing 1). Headline: Beijing Sinotau International Pharmaceutical Technology Co., Ltd. (09941).",
+ "generated_at": "2026-11-25T22:21:48.033309+00:00",
+ "summary": "13 items collected in the past 30 days, 10 picks (Subscribing 1, Debut 9). Headline: Changzhou Microintelligence Co., Ltd. (03275).",
  "items": [
+  {
+   "id": "bad33a893b94c69f933fd089b7691cb1d0bb5947",
+   "title": "Changzhou Microintelligence Co., Ltd. (03275)",
+   "link": "https://finkit.hk/en/ipo/03275",
+   "source": "FinKit IPO Snapshot",
+   "source_id": "finkit-ipo",
+   "published": "2026-12-03T16:00:00+00:00",
+   "en_title": "Changzhou Microintelligence Co., Ltd. (03275)",
+   "en_oneliner": "Robotics firm Microintelligence relaunched its offering on 23 November at HK$12.07-15.69, with subscriptions open 23 November to 1 December and listing on 4 December; it withdrew its October attempt and now seeks up to about HK$585 million. Oversubscribed about 60.83 times.",
+   "category": "subscribing",
+   "category_label": "Subscribing",
+   "tier": "T2",
+   "tags": [
+    "Offer price"
+   ],
+   "score": 90,
+   "reason": "Covers Subscription and Listing · Published within 6 hours",
+   "is_new": false,
+   "trend": "same",
+   "hot_score": 505.6,
+   "prev_rank": 1,
+   "prev_hot_score": 507.9
+  },
   {
    "id": "876e3441adc79ae23f60d8cce20951343453dd4c",
    "title": "Beijing Sinotau International Pharmaceutical Technology Co., Ltd. (09941)",
@@ -29,32 +52,9 @@
    "reason": "Covers Sponsor and Listing · Relevant to this topic",
    "is_new": false,
    "trend": "same",
-   "hot_score": 59.7,
+   "hot_score": 48.3,
    "prev_rank": 2,
-   "prev_hot_score": 59.8
-  },
-  {
-   "id": "bad33a893b94c69f933fd089b7691cb1d0bb5947",
-   "title": "Changzhou Microintelligence Co., Ltd. (03275)",
-   "link": "https://finkit.hk/en/ipo/03275",
-   "source": "FinKit IPO Snapshot",
-   "source_id": "finkit-ipo",
-   "published": "2026-12-03T16:00:00+00:00",
-   "en_title": "Changzhou Microintelligence Co., Ltd. (03275)",
-   "en_oneliner": "Robotics firm Microintelligence relaunched its offering on 23 November at HK$12.07-15.69, with subscriptions open 23 November to 1 December and listing on 4 December; it withdrew its October attempt and now seeks up to about HK$585 million. Oversubscribed about 48.85 times.",
-   "category": "subscribing",
-   "category_label": "Subscribing",
-   "tier": "T2",
-   "tags": [
-    "Offer price"
-   ],
-   "score": 80,
-   "reason": "Covers Offer price · Published within 6 hours",
-   "is_new": false,
-   "trend": "same",
-   "hot_score": 555.8,
-   "prev_rank": 1,
-   "prev_hot_score": 556.6
+   "prev_hot_score": 48.5
   },
   {
    "id": "d93affadd1577efbed12c990e9f64a63181dd15e",
