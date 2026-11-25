@@ -5,7 +5,7 @@
  "date": "November 26, 2026",
  "date_iso": "2026-11-26",
  "issue": 2,
- "generated_at": "2026-11-25T22:21:48.033309+00:00",
+ "generated_at": "2026-11-25T23:37:32.496476+00:00",
  "summary": "2 items collected in the past 7 days, 2 picks (Subscribing 1, Debut 1). Headline: Changzhou Microintelligence Co., Ltd. (03275).",
  "items": [
   {
@@ -27,9 +27,9 @@
    "reason": "Covers Subscription and Listing · Published within 6 hours",
    "is_new": false,
    "trend": "same",
-   "hot_score": 505.6,
+   "hot_score": 499.7,
    "prev_rank": 1,
-   "prev_hot_score": 507.9
+   "prev_hot_score": 500.9
   },
   {
    "id": "876e3441adc79ae23f60d8cce20951343453dd4c",
@@ -52,9 +52,9 @@
    "reason": "Covers Sponsor and Listing · Relevant to this topic",
    "is_new": false,
    "trend": "same",
-   "hot_score": 48.3,
+   "hot_score": 47.7,
    "prev_rank": 2,
-   "prev_hot_score": 48.5
+   "prev_hot_score": 47.8
   }
  ]
 }
