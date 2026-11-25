@@ -102,6 +102,24 @@ def _parse_offer_period(text):
                 return date(y, m1, d1), date(y, m2, d2)
             except ValueError:
                 return None, None
+    m = re.search(r"offer period\s+(\d{1,2})\s+([A-Za-z]+)\s*[-–]\s*(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})", text, re.I)
+    if m:
+        d1, mon1, d2, mon2, y = int(m.group(1)), m.group(2), int(m.group(3)), m.group(4), int(m.group(5))
+        m1, m2 = MONTHS.get(mon1), MONTHS.get(mon2)
+        if m1 and m2:
+            try:
+                return date(y, m1, d1), date(y, m2, d2)
+            except ValueError:
+                return None, None
+    m = re.search(r"offer period\s+(\d{1,2})\s*[-–]\s*(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})", text, re.I)
+    if m:
+        d1, d2, mon, y = int(m.group(1)), int(m.group(2)), m.group(3), int(m.group(4))
+        month = MONTHS.get(mon)
+        if month:
+            try:
+                return date(y, month, d1), date(y, month, d2)
+            except ValueError:
+                return None, None
     return None, None
 
 
