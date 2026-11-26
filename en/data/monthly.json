@@ -2,11 +2,11 @@
  "kind": "monthly",
  "key": "2026-11",
  "label": "November 2026",
- "date": "November 26, 2026",
- "date_iso": "2026-11-26",
+ "date": "November 27, 2026",
+ "date_iso": "2026-11-27",
  "issue": 1,
- "generated_at": "2026-11-25T23:37:32.496476+00:00",
- "summary": "13 items collected in the past 30 days, 10 picks (Subscribing 1, Debut 9). Headline: Changzhou Microintelligence Co., Ltd. (03275).",
+ "generated_at": "2026-11-26T22:21:38.700799+00:00",
+ "summary": "12 items collected in the past 30 days, 10 picks (Subscribing 1, Debut 8, Filings & hearings 1). Headline: Changzhou Microintelligence Co., Ltd. (03275).",
  "items": [
   {
    "id": "bad33a893b94c69f933fd089b7691cb1d0bb5947",
@@ -16,7 +16,7 @@
    "source_id": "finkit-ipo",
    "published": "2026-12-03T16:00:00+00:00",
    "en_title": "Changzhou Microintelligence Co., Ltd. (03275)",
-   "en_oneliner": "Robotics firm Microintelligence relaunched its offering on 23 November at HK$12.07-15.69, with subscriptions open 23 November to 1 December and listing on 4 December; it withdrew its October attempt and now seeks up to about HK$585 million. Oversubscribed about 60.83 times.",
+   "en_oneliner": "Robotics firm Microintelligence relaunched its offering on 23 November at HK$12.07-15.69, with subscriptions open 23 November to 1 December and listing on 4 December; it withdrew its October attempt and now seeks up to about HK$585 million. Oversubscribed about 75.9 times.",
    "category": "subscribing",
    "category_label": "Subscribing",
    "tier": "T2",
@@ -27,9 +27,9 @@
    "reason": "Covers Subscription and Listing · Published within 6 hours",
    "is_new": false,
    "trend": "same",
-   "hot_score": 499.7,
+   "hot_score": 404.5,
    "prev_rank": 1,
-   "prev_hot_score": 500.9
+   "prev_hot_score": 406.4
   },
   {
    "id": "876e3441adc79ae23f60d8cce20951343453dd4c",
@@ -48,13 +48,13 @@
     "Sponsor",
     "Listing"
    ],
-   "score": 80,
+   "score": 70,
    "reason": "Covers Sponsor and Listing · Relevant to this topic",
    "is_new": false,
    "trend": "same",
-   "hot_score": 47.7,
+   "hot_score": 33.8,
    "prev_rank": 2,
-   "prev_hot_score": 47.8
+   "prev_hot_score": 33.9
   },
   {
    "id": "d93affadd1577efbed12c990e9f64a63181dd15e",
@@ -232,27 +232,25 @@
    "prev_hot_score": null
   },
   {
-   "id": "3b08e97734505d839ee34ae0800b6eb17beecd57",
-   "title": "Suzhou Dongshan Precision Manufacturing Co., Ltd. (02384)",
-   "link": "https://finkit.hk/en/ipo/02384",
+   "id": "36bc7ed1d24696bd219081ae07c463ecc28240e4",
+   "title": "Ganzhou Hemay Pharmaceutical Co., Ltd. (00054)",
+   "link": "https://finkit.hk/en/ipo/00054",
    "source": "FinKit IPO Snapshot",
    "source_id": "finkit-ipo",
-   "published": "2026-10-27T16:00:00+00:00",
-   "en_title": "Suzhou Dongshan Precision Manufacturing Co., Ltd. (02384)",
-   "en_oneliner": "Precision manufacturer Dongshan Precision listed on 28 October with an offer price of up to HK$93.80, making printed circuit boards and precision components. It closed its first day down 0.75%, after falling 5.53% in the grey market.",
-   "category": "debut",
-   "category_label": "Debut",
+   "published": "2026-11-17T07:03:39.518418+00:00",
+   "en_title": "Ganzhou Hemay Pharmaceutical Co., Ltd. (00054)",
+   "en_oneliner": "Biotech firm Hemay has published an offer range of HK$15.50-18.90, but its listing date has been delayed and the outcome is still pending.",
+   "category": "filings",
+   "category_label": "Filings & hearings",
    "tier": "T2",
    "tags": [
-    "Listing",
-    "Offer price",
-    "Debut"
+    "Offer price"
    ],
-   "score": 65,
-   "reason": "Covers Listing and Offer price · Relevant to this topic",
+   "score": 55,
+   "reason": "Covers Offer price · Relevant to this topic",
    "is_new": false,
    "trend": "same",
-   "hot_score": 65,
+   "hot_score": 55,
    "prev_rank": null,
    "prev_hot_score": null
   }

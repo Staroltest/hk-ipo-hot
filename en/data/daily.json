@@ -1,11 +1,11 @@
 {
  "kind": "daily",
- "key": "2026-11-26",
- "label": "Nov 26",
- "date": "November 26, 2026",
- "date_iso": "2026-11-26",
- "issue": 10,
- "generated_at": "2026-11-25T23:37:32.496476+00:00",
+ "key": "2026-11-27",
+ "label": "Nov 27",
+ "date": "November 27, 2026",
+ "date_iso": "2026-11-27",
+ "issue": 11,
+ "generated_at": "2026-11-26T22:21:38.700799+00:00",
  "summary": "1 items collected in the past 24 hours, 1 picks (Subscribing 1). Headline: Changzhou Microintelligence Co., Ltd. (03275).",
  "items": [
   {
@@ -16,7 +16,7 @@
    "source_id": "finkit-ipo",
    "published": "2026-12-03T16:00:00+00:00",
    "en_title": "Changzhou Microintelligence Co., Ltd. (03275)",
-   "en_oneliner": "Robotics firm Microintelligence relaunched its offering on 23 November at HK$12.07-15.69, with subscriptions open 23 November to 1 December and listing on 4 December; it withdrew its October attempt and now seeks up to about HK$585 million. Oversubscribed about 60.83 times.",
+   "en_oneliner": "Robotics firm Microintelligence relaunched its offering on 23 November at HK$12.07-15.69, with subscriptions open 23 November to 1 December and listing on 4 December; it withdrew its October attempt and now seeks up to about HK$585 million. Oversubscribed about 75.9 times.",
    "category": "subscribing",
    "category_label": "Subscribing",
    "tier": "T2",
@@ -27,9 +27,9 @@
    "reason": "Covers Subscription and Listing · Published within 6 hours",
    "is_new": false,
    "trend": "same",
-   "hot_score": 499.7,
+   "hot_score": 404.5,
    "prev_rank": 1,
-   "prev_hot_score": 500.9
+   "prev_hot_score": 406.4
   }
  ]
 }
