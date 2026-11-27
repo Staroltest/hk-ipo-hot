@@ -81,9 +81,41 @@ def _clean(text):
     return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", text or ""))).strip()
 
 
-def _parse_offer_period(text):
+def _parse_offer_period(text, year_hint=None):
     """'Offer open 16-19 November 2026' / 'Offer open 30 October - 4 November 2026'
-    -> (start_date, end_date)，解析失败返回 (None, None)。"""
+    / 'offer period 23 November-1 December 2026'
+    / 'Offer open (27 November to 2 December)'（FinKit 2026-11-27 起的新写法：
+    括号 + to 连接 + 无年份）-> (start_date, end_date)，解析失败返回 (None, None)。
+    无年份时取当年（跨年如 12 月到 1 月则结束年 +1）；快照只保留近 30 天
+    的条目，招股窗口总在今天附近，当年假设是安全的。"""
+    m = re.search(
+        r"(?:Offer open|offer period)\s*\(?\s*(\d{1,2})\s+([A-Za-z]+)\s+"
+        r"(?:to|[-–])\s+(\d{1,2})\s+([A-Za-z]+)(?:\s+(\d{4}))?\s*\)?",
+        text, re.I)
+    if m:
+        d1, mon1, d2, mon2 = int(m.group(1)), m.group(2), int(m.group(3)), m.group(4)
+        m1, m2 = MONTHS.get(mon1), MONTHS.get(mon2)
+        if m1 and m2:
+            y1 = int(m.group(5)) if m.group(5) else (
+                year_hint or datetime.now(CST).year)
+            y2 = int(m.group(5)) if m.group(5) else (y1 + 1 if m2 < m1 else y1)
+            try:
+                return date(y1, m1, d1), date(y2, m2, d2)
+            except ValueError:
+                return None, None
+    m = re.search(
+        r"(?:Offer open|offer period)\s*\(?\s*(\d{1,2})\s+(?:to|[-–])\s*"
+        r"(\d{1,2})\s+([A-Za-z]+)(?:\s+(\d{4}))?\s*\)?", text, re.I)
+    if m:
+        d1, d2, mon = int(m.group(1)), int(m.group(2)), m.group(3)
+        month = MONTHS.get(mon)
+        if month:
+            y = int(m.group(4)) if m.group(4) else (
+                year_hint or datetime.now(CST).year)
+            try:
+                return date(y, month, d1), date(y, month, d2)
+            except ValueError:
+                return None, None
     m = re.search(r"Offer open\s+(\d{1,2})\s*[-–]\s*(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})", text)
     if m:
         d1, d2, mon, y = int(m.group(1)), int(m.group(2)), m.group(3), int(m.group(4))
@@ -153,7 +185,8 @@ def parse_finkit_list(body):
         sector = re.search(r"Sector</span><span[^>]*>(.*?)</span>", c, re.S)
         desc = re.search(r'<p class="mt-2 text-xs[^>]*>(.*?)</p>', c, re.S)
         desc_t = _clean(desc.group(1)) if desc else ""
-        offer_start, offer_end = _parse_offer_period(desc_t)
+        offer_start, offer_end = _parse_offer_period(
+            desc_t, year_hint=listing.year if listing else None)
         out.append({
             "code": code,
             "name_en": _clean(nm.group(1)) if nm else "",
@@ -238,13 +271,14 @@ def parse_vbkr_upcoming(body):
     """解析 vbkr 待上市表：返回 {code: listing_date}。
 
     待上市表以“暗盤時間”列为标志（可認購表无此列、已遞表无此表头）；
+    2026-11-28 修：待上市表为空时（如全部新股仍在认购期）可認購表
+    同样含“股票代碼”“上市”两列且同样可核对上市日，改为按表头认表，
+    不再要求“暗盤時間”列（已遞表只有“公司名稱”，仍被表头排除）。
     按表头定位“股票代碼”“上市”两列，上市日为 YYYY-MM-DD，“--”跳过。
     """
     text = body.decode("utf-8", "ignore") if isinstance(body, bytes) else body
     out = {}
     for tb in re.findall(r"<table.*?</table>", text, re.S):
-        if "暗盤時間" not in tb:
-            continue
         rows = re.findall(r"<tr.*?</tr>", tb, re.S)
         if not rows:
             continue
