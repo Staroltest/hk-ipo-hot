@@ -378,14 +378,15 @@ HKIPOX_HOME = "https://hkipox.com/"
 def parse_hkipox_home(body):
     """解析 HKIPOx 首页三张静态表（今日申购 / 待上市 / 已上市）。
 
-    每行 <tr data-href="/stock/NNNNN">，单元格按 data-label 取值。
+    每行 <tr data-href="/stock/NNNNN">（行上可带 class 等属性，如
+    HKIPOx 2026-11-28 起招股中表行的 class="fund-grp-N"），单元格按 data-label 取值。
     返回 {code: {name, listing(date|None), multiple, grey, first_day}}，
     其中 multiple 如 '351.08x'，grey / first_day 如 '+32.32%'，缺失为 None
     （'—' 也归一化为 None）。只取招股事实与涨跌幅数字，不转载正文。
     """
     text = body.decode("utf-8", "ignore") if isinstance(body, bytes) else body
     out = {}
-    for m in re.finditer(r'<tr data-href="/stock/(\d+)">(.*?)</tr>', text, re.S):
+    for m in re.finditer(r'<tr data-href="/stock/(\d+)"[^>]*>(.*?)</tr>', text, re.S):
         code, row = m.group(1), m.group(2)
 
         def cell(label):
